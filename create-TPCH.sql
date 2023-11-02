@@ -1,11 +1,3 @@
-DROP TABLE IF EXISTS leagues;
-DROP TABLE IF EXISTS nation;
-DROP TABLE IF EXISTS teams;
-DROP TABLE IF EXISTS players;
-DROP TABLE IF EXISTS matches;
-DROP TABLE IF EXISTS coaches;
-DROP TABLE IF EXISTS stats;
-
 CREATE TABLE leagues (
     l_leagueID              int not null,
     l_leagueName            char(15) not null,
