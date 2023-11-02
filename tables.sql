@@ -1,3 +1,11 @@
+DROP TABLE IF EXISTS leagues;
+DROP TABLE IF EXISTS nation;
+DROP TABLE IF EXISTS teams;
+DROP TABLE IF EXISTS players;
+DROP TABLE IF EXISTS matches;
+DROP TABLE IF EXISTS coaches;
+DROP TABLE IF EXISTS stats;
+
 CREATE TABLE leagues (
     l_leagueID              int not null,
     l_leagueName            char(15) not null,
@@ -6,13 +14,13 @@ CREATE TABLE leagues (
 
 CREATE TABLE nation (
     n_nationID              int not null,
-    n_nationName            varchar(15) not null,  
+    n_nationName            varchar(15) not null
 );
 
 CREATE TABLE teams (
     t_teamID                int not null,
     t_teamName              char(15) not null,
-    t_yearEstablished       varchar(152)
+    t_yearEstablished       varchar(152),
     t_wins                  int not null,
     t_losses                int not null,
     t_draws                 int not null,
@@ -38,10 +46,10 @@ CREATE TABLE matches (
     m_awayID                int not null
 );
 
-CREATE TABLE coaches ([-
+CREATE TABLE coaches (
     c_coachID               int not null,
     c_coachName             varchar(25) not null,
-    c_teamID                int not null     
+    c_teamID                int not null
 );
 
 CREATE TABLE stats (
@@ -52,5 +60,5 @@ CREATE TABLE stats (
     s_assists               int not null,
     s_yellowCards           int not null,
     s_redCards              int not null,
-    s_saves                 int not null,
+    s_saves                 int not null
 );
