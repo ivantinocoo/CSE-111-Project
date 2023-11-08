@@ -43,7 +43,10 @@ CREATE TABLE matches (
 CREATE TABLE coaches (
     c_coachID               int not null,
     c_coachName             varchar(25) not null,
-    c_teamID                int not null
+    c_nationName            varchar(25) not null,
+    c_teamName              varchar(25) not null,
+    c_age                   int not null,
+    c_contractExpire        int not null
 );
 
 CREATE TABLE stats (
