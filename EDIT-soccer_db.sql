@@ -18,4 +18,3 @@ UPDATE nation SET n_nationName = 'Updated Nation A' WHERE n_nationID = 1;
 
 -- Update data in the 'stats' table
 --UPDATE stats SET s_goals = 3 WHERE s_playerID = 1;
-
