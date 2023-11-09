@@ -29,7 +29,8 @@ CREATE TABLE teams (
     t_goalsDifference       int not null,
     t_Points                int not null,
     t_topScorer             char(15) not null,
-    t_topScorerGoals        int not null
+    t_topScorerGoals        int not null,
+    t_leagueID              int not null
 );
 
 CREATE TABLE players (

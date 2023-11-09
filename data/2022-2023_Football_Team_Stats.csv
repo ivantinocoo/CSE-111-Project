@@ -1,98 +1,98 @@
-1,Barcelona,29,23,4,2,53,9,44,73,Robert Lewandowski,17
-2,Napoli,30,24,3,3,66,21,45,75,Victor Osimhen,21
-3,Paris S-G,32,24,3,5,75,31,44,75,Kylian Mbappé,22
-4,Arsenal,32,23,6,3,77,34,43,75,Martinelli,15
-5,Manchester City,30,22,4,4,78,28,50,70,Erling Haaland,32
-6,Real Madrid,30,20,5,5,63,24,39,65,Karim Benzema ,14
-7,Dortmund,29,19,3,7,66,39,27,60,Julian Brandt ,8
-8,Atlético Madrid,29,18,6,5,47,21,26,60,Antoine Griezmann ,11
-9,Lens,32,19,9,4,54,25,29,66,Loïs Openda ,17
-10,Marseille,31,19,7,5,57,30,27,64,Alexis Sánchez,12
-11,Bayern Munich,29,17,8,4,79,33,46,59,Jamal Musiala ,11
-12,Lazio,31,18,7,6,49,21,28,61,Ciro Immobile Mattia Zaccagni ,10
-13,Juventus,30,18,5,7,47,25,22,59,Adrien Rabiot Dušan Vlahovi? ,8
-14,Manchester Utd,30,18,5,7,46,37,9,59,Marcus Rashford ,15
-15,Monaco,32,18,7,7,66,46,20,61,Wissam Ben Yedder ,17
-16,Newcastle Utd,30,15,11,4,48,24,24,56,Miguel Almirón ,11
-17,Roma,30,17,5,8,42,26,16,56,Paulo Dybala ,11
-18,Union Berlin,28,15,7,6,43,31,12,52,Sheraldo Becker ,8
-19,RB Leipzig,28,15,6,7,53,35,18,51,Christopher Nkunku ,12
-20,Real Sociedad,30,16,6,8,39,29,10,54,Alexander Sørloth ,10
-21,Freiburg,28,14,8,6,41,37,4,50,Vincenzo Grifo ,13
-22,Milan,30,15,8,7,49,37,12,53,Rafael Leão ,10
-23,Lille,32,16,8,8,57,40,17,56,Jonathan David ,21
-24,Rennes,31,16,5,10,51,33,18,53,Amine Gouiri ,10
-25,Tottenham,31,16,5,10,57,45,12,53,Harry Kane ,23
-26,Inter,30,16,3,11,48,34,14,51,Lautaro Martínez ,14
-27,Brighton,29,14,7,8,54,37,17,49,Alexis Mac Allister ,8
-28,Atalanta,30,14,7,9,48,35,13,49,Ademola Lookman ,13
-29,Villarreal,29,14,5,10,38,28,10,47,José Luis Morales ,7
-30,Liverpool,31,14,8,9,59,38,21,50,Mohamed Salah ,16
-31,Lyon,31,14,8,9,49,34,15,50,Alexandre Lacazette ,19
-32,Betis,30,14,6,10,39,33,6,48,Borja Iglesias ,12
-33,Aston Villa,32,15,6,11,45,41,4,51,Ollie Watkins ,14
-34,Leverkusen,28,13,5,10,51,41,10,44,Moussa Diaby ,9
-35,Mainz 05,29,12,9,8,49,40,9,45,Marcus Ingvartsen Karim Onisiwo ,9
-36,Athletic Club,30,13,7,10,42,30,12,46,Iñaki Williams Oihan Sancet ,8
-37,Reims,31,11,14,6,40,32,8,47,Folarin Balogun ,18
-38,Wolfsburg,29,11,10,8,51,37,14,43,Yannick Gerhardt ,6
-39,Nice,31,11,12,8,38,29,9,45,Gaëtan Laborde ,8
-40,Eint Frankfurt,29,11,9,9,49,45,4,42,Randal Kolo Muani ,13
-41,Fulham,31,13,6,12,44,42,2,45,Aleksandar Mitrovi? ,11
-42,Lorient,31,12,9,10,43,43,0,45,Terem Moffi ,12
-43,Bologna,31,12,8,11,40,39,1,44,Marko Arnautovi? Riccardo Orsolini ,8
-44,Fiorentina,30,11,9,10,35,33,2,42,Arthur ,7
-45,Clermont Foot,31,12,7,12,33,42,-9,43,Grejohn Kyei Muhammed Saracevic Cham ,6
-46,Brentford,32,10,14,8,48,43,5,44,Ivan Toney ,19
-47,Osasuna,30,11,8,11,28,32,-4,41,Ezequiel Ávila ,7
-48,Torino,31,11,9,11,32,36,-4,42,Antonio Sanabria ,9
-49,Rayo Vallecano,30,10,10,10,36,36,0,40,Isaac Palazón Camacho ,8
-50,Udinese,30,9,12,9,39,39,0,39,Beto ,10
-51,M'Gladbach,28,9,9,10,43,45,-2,36,Marcus Thuram ,13
-52,Sassuolo,31,11,7,13,38,46,-8,40,Armand Lauriente ,7
-53,Mallorca,29,10,7,12,26,30,-4,37,Vedat Muriqi ,12
-54,Girona,30,10,8,12,44,43,1,38,Cristhian Stuani Valentín Castellanos ,7
-55,Monza,30,10,8,12,35,41,-6,38,Carlos ,5
-56,Chelsea,31,10,9,12,30,33,-3,39,Kai Havertz ,7
-57,Toulouse,31,11,5,15,47,54,-7,38,Thijs Dallinga ,12
-58,Köln,29,8,11,10,40,47,-7,35,Florian Kainz Ellyes Skhiri ,6
-59,Sevilla,29,9,8,12,35,44,-9,35,Youssef En-Nesyri ,7
-60,Werder Bremen,29,10,5,14,47,56,-9,35,Niclas Füllkrug ,16
-61,Celta Vigo,30,9,9,12,36,42,-6,36,Iago Aspas ,12
-62,Montpellier,31,11,4,16,47,52,-5,37,Sepe Elye Wahi ,13
-63,Valladolid,30,10,5,15,26,48,-22,35,Sergio León Cyle Larin ,5
-64,Crystal Palace,32,9,10,13,31,40,-9,37,Eberechi Eze ,7
-65,Getafe,29,7,10,12,27,36,-9,31,Enes Ünal ,13
-66,Empoli,30,7,11,12,25,37,-12,32,Tommaso Baldanzi ,4
-67,Cádiz,30,7,11,12,23,42,-19,32,Álex Fernández Lucas Pérez... ,3
-68,Salernitana,31,7,12,12,37,50,-13,33,Boulaye Dia ,11
-69,Wolves,32,9,7,16,27,44,-17,34,Daniel Podence ,6
-70,Bournemouth,31,9,6,16,31,59,-28,33,Philip Billing ,7
-71,West Ham,30,8,7,15,29,41,-12,31,Saïd Benrahma Jarrod Bowen ,5
-72,Augsburg,29,8,6,15,38,54,-16,30,Mergim Berisha ,9
-73,Auxerre,32,8,9,15,30,53,-23,33,M'Baye Niang Nuno da Costa ,5
-74,Nantes,31,6,13,12,33,44,-11,31,Mostafa Mohamed ,8
-75,Hoffenheim,29,8,5,16,39,50,-11,29,Andrej Kramari? ,9
-76,Brest,31,7,10,14,35,48,-13,31,Jérémy Le Douaron ,8
-77,Almería,30,8,6,16,36,52,-16,30,El Bilal Touré ,6
-78,Strasbourg,31,6,11,14,41,53,-12,29,Habib Diallo ,15
-79,Valencia,29,7,6,16,30,36,-6,27,Edinson Cavani Justin Kluivert ,5
-80,Lecce,30,6,10,14,26,36,-10,28,Gabriel Strefezza ,7
-81,Espanyol,30,6,10,14,35,49,-14,28,Joselu ,12
-82,Bochum,29,8,3,18,32,66,-34,27,Philipp Hofmann ,8
-83,Leeds United,32,7,8,17,41,62,-21,29,Rodrigo ,11
-84,Leicester City,32,8,4,20,43,56,-13,28,Harvey Barnes ,10
-85,Everton,32,6,10,16,24,46,-22,28,Demarai Gray Dwight McNeil ,4
-86,Spezia,31,5,12,14,26,49,-23,27,M'Bala Nzola ,13
-87,Stuttgart,29,5,10,14,36,51,-15,25,Sehrou Guirassy ,7
-88,Schalke 04,28,5,9,14,26,52,-26,24,Marius Bülter ,9
-89,Hellas Verona,31,6,8,17,26,44,-18,26,Simone Verdi ,4
-90,Nott'ham Forest,32,6,9,17,26,59,-33,27,Brennan Johnson ,8
-91,Hertha BSC,29,5,7,17,35,59,-24,22,Dodi Lukebakio ,11
-92,Southampton,32,6,6,20,27,56,-29,24,James Ward-Prowse ,7
-93,Troyes,31,4,9,18,39,67,-28,21,Mama Samba Baldé ,11
-94,Ajaccio,31,6,3,22,22,58,-36,21,Youcef Belaïli Mounaim El Idrissy ,6
-95,Cremonese,30,3,10,17,27,54,-27,19,Cyriel Dessers Daniel Ciofani ,6
-96,Sampdoria,31,3,8,20,20,52,-32,17,Manolo Gabbiadini ,6
-97,Elche,29,2,7,20,20,59,-39,13,Pere Milla ,6
-98,Angers,32,3,5,24,25,68,-43,14,Adrien Hunou Sofiane Boufal,4
+1,Barcelona,29,23,4,2,53,9,44,73,Robert Lewandowski,17,5
+2,Napoli,30,24,3,3,66,21,45,75,Victor Osimhen,21,4
+3,Paris S-G,32,24,3,5,75,31,44,75,Kylian Mbappé,22,2
+4,Arsenal,32,23,6,3,77,34,43,75,Martinelli,15,1
+5,Manchester City,30,22,4,4,78,28,50,70,Erling Haaland,32,1
+6,Real Madrid,30,20,5,5,63,24,39,65,Karim Benzema,14,5
+7,Dortmund,29,19,3,7,66,39,27,60,Julian Brandt,8,3
+8,Atlético Madrid,29,18,6,5,47,21,26,60,Antoine Griezmann,11,5
+9,Lens,32,19,9,4,54,25,29,66,Loïs Openda ,17,2
+10,Marseille,31,19,7,5,57,30,27,64,Alexis Sánchez,12,2
+11,Bayern Munich,29,17,8,4,79,33,46,59,Jamal Musiala ,11,3
+12,Lazio,31,18,7,6,49,21,28,61,Ciro Immobile Mattia Zaccagni ,10,4
+13,Juventus,30,18,5,7,47,25,22,59,Adrien Rabiot Dušan Vlahovi? ,8,4
+14,Manchester Utd,30,18,5,7,46,37,9,59,Marcus Rashford ,15,1
+15,Monaco,32,18,7,7,66,46,20,61,Wissam Ben Yedder ,17,2
+16,Newcastle Utd,30,15,11,4,48,24,24,56,Miguel Almirón ,11,1
+17,Roma,30,17,5,8,42,26,16,56,Paulo Dybala ,11,4
+18,Union Berlin,28,15,7,6,43,31,12,52,Sheraldo Becker ,8,3
+19,RB Leipzig,28,15,6,7,53,35,18,51,Christopher Nkunku ,12,3
+20,Real Sociedad,30,16,6,8,39,29,10,54,Alexander Sørloth ,10,5
+21,Freiburg,28,14,8,6,41,37,4,50,Vincenzo Grifo ,13,3
+22,Milan,30,15,8,7,49,37,12,53,Rafael Leão ,10,4
+23,Lille,32,16,8,8,57,40,17,56,Jonathan David ,21,2
+24,Rennes,31,16,5,10,51,33,18,53,Amine Gouiri ,10,2
+25,Tottenham,31,16,5,10,57,45,12,53,Harry Kane ,23,1
+26,Inter,30,16,3,11,48,34,14,51,Lautaro Martínez ,14,4
+27,Brighton,29,14,7,8,54,37,17,49,Alexis Mac Allister ,8,1
+28,Atalanta,30,14,7,9,48,35,13,49,Ademola Lookman ,13,4
+29,Villarreal,29,14,5,10,38,28,10,47,José Luis Morales ,7,5
+30,Liverpool,31,14,8,9,59,38,21,50,Mohamed Salah ,16,1
+31,Lyon,31,14,8,9,49,34,15,50,Alexandre Lacazette ,19,2
+32,Betis,30,14,6,10,39,33,6,48,Borja Iglesias ,12,5
+33,Aston Villa,32,15,6,11,45,41,4,51,Ollie Watkins ,14,2
+34,Leverkusen,28,13,5,10,51,41,10,44,Moussa Diaby ,9,3
+35,Mainz 05,29,12,9,8,49,40,9,45,Marcus Ingvartsen Karim Onisiwo ,9,3
+36,Athletic Club,30,13,7,10,42,30,12,46,Iñaki Williams Oihan Sancet ,8,5
+37,Reims,31,11,14,6,40,32,8,47,Folarin Balogun ,18,2
+38,Wolfsburg,29,11,10,8,51,37,14,43,Yannick Gerhardt ,6,3
+39,Nice,31,11,12,8,38,29,9,45,Gaëtan Laborde ,8,2
+40,Eint Frankfurt,29,11,9,9,49,45,4,42,Randal Kolo Muani ,13,3
+41,Fulham,31,13,6,12,44,42,2,45,Aleksandar Mitrovi? ,11,1
+42,Lorient,31,12,9,10,43,43,0,45,Terem Moffi ,12,2
+43,Bologna,31,12,8,11,40,39,1,44,Marko Arnautovi? Riccardo Orsolini ,8,4
+44,Fiorentina,30,11,9,10,35,33,2,42,Arthur ,7,4
+45,Clermont Foot,31,12,7,12,33,42,-9,43,Grejohn Kyei Muhammed Saracevic Cham ,6,2
+46,Brentford,32,10,14,8,48,43,5,44,Ivan Toney ,19,1
+47,Osasuna,30,11,8,11,28,32,-4,41,Ezequiel Ávila ,7,5
+48,Torino,31,11,9,11,32,36,-4,42,Antonio Sanabria ,9,4
+49,Rayo Vallecano,30,10,10,10,36,36,0,40,Isaac Palazón Camacho ,8,5
+50,Udinese,30,9,12,9,39,39,0,39,Beto ,10,4
+51,M'Gladbach,28,9,9,10,43,45,-2,36,Marcus Thuram ,13,3
+52,Sassuolo,31,11,7,13,38,46,-8,40,Armand Lauriente ,7,4
+53,Mallorca,29,10,7,12,26,30,-4,37,Vedat Muriqi ,12,5
+54,Girona,30,10,8,12,44,43,1,38,Cristhian Stuani Valentín Castellanos ,7,5
+55,Monza,30,10,8,12,35,41,-6,38,Carlos ,5,4
+56,Chelsea,31,10,9,12,30,33,-3,39,Kai Havertz ,7,1
+57,Toulouse,31,11,5,15,47,54,-7,38,Thijs Dallinga ,12,2
+58,Köln,29,8,11,10,40,47,-7,35,Florian Kainz Ellyes Skhiri ,6,3
+59,Sevilla,29,9,8,12,35,44,-9,35,Youssef En-Nesyri ,7,5
+60,Werder Bremen,29,10,5,14,47,56,-9,35,Niclas Füllkrug ,16,3
+61,Celta Vigo,30,9,9,12,36,42,-6,36,Iago Aspas ,12,5
+62,Montpellier,31,11,4,16,47,52,-5,37,Sepe Elye Wahi ,13,2
+63,Valladolid,30,10,5,15,26,48,-22,35,Sergio León Cyle Larin ,5,5
+64,Crystal Palace,32,9,10,13,31,40,-9,37,Eberechi Eze ,7,1
+65,Getafe,29,7,10,12,27,36,-9,31,Enes Ünal ,13,5
+66,Empoli,30,7,11,12,25,37,-12,32,Tommaso Baldanzi ,4,4
+67,Cádiz,30,7,11,12,23,42,-19,32,Álex Fernández Lucas Pérez... ,3,5
+68,Salernitana,31,7,12,12,37,50,-13,33,Boulaye Dia ,11,4
+69,Wolves,32,9,7,16,27,44,-17,34,Daniel Podence ,6,1
+70,Bournemouth,31,9,6,16,31,59,-28,33,Philip Billing ,7,1
+71,West Ham,30,8,7,15,29,41,-12,31,Saïd Benrahma Jarrod Bowen ,5,1
+72,Augsburg,29,8,6,15,38,54,-16,30,Mergim Berisha ,9,3
+73,Auxerre,32,8,9,15,30,53,-23,33,M'Baye Niang Nuno da Costa ,5,2
+74,Nantes,31,6,13,12,33,44,-11,31,Mostafa Mohamed ,8,2
+75,Hoffenheim,29,8,5,16,39,50,-11,29,Andrej Kramari? ,9,3
+76,Brest,31,7,10,14,35,48,-13,31,Jérémy Le Douaron ,8,2
+77,Almería,30,8,6,16,36,52,-16,30,El Bilal Touré ,6,5
+78,Strasbourg,31,6,11,14,41,53,-12,29,Habib Diallo ,15,2
+79,Valencia,29,7,6,16,30,36,-6,27,Edinson Cavani Justin Kluivert ,5,5
+80,Lecce,30,6,10,14,26,36,-10,28,Gabriel Strefezza ,7,4
+81,Espanyol,30,6,10,14,35,49,-14,28,Joselu ,12,5
+82,Bochum,29,8,3,18,32,66,-34,27,Philipp Hofmann ,8,3
+83,Leeds United,32,7,8,17,41,62,-21,29,Rodrigo ,11,1
+84,Leicester City,32,8,4,20,43,56,-13,28,Harvey Barnes ,10,1
+85,Everton,32,6,10,16,24,46,-22,28,Demarai Gray Dwight McNeil ,4,1
+86,Spezia,31,5,12,14,26,49,-23,27,M'Bala Nzola ,13,4
+87,Stuttgart,29,5,10,14,36,51,-15,25,Sehrou Guirassy ,7,3
+88,Schalke 04,28,5,9,14,26,52,-26,24,Marius Bülter ,9,3
+89,Hellas Verona,31,6,8,17,26,44,-18,26,Simone Verdi ,4,4
+90,Nott'ham Forest,32,6,9,17,26,59,-33,27,Brennan Johnson ,8,1
+91,Hertha BSC,29,5,7,17,35,59,-24,22,Dodi Lukebakio ,11,3
+92,Southampton,32,6,6,20,27,56,-29,24,James Ward-Prowse ,7,1
+93,Troyes,31,4,9,18,39,67,-28,21,Mama Samba Baldé ,11,2
+94,Ajaccio,31,6,3,22,22,58,-36,21,Youcef Belaïli Mounaim El Idrissy ,6,2
+95,Cremonese,30,3,10,17,27,54,-27,19,Cyriel Dessers Daniel Ciofani ,6,4
+96,Sampdoria,31,3,8,20,20,52,-32,17,Manolo Gabbiadini ,6,4
+97,Elche,29,2,7,20,20,59,-39,13,Pere Milla ,6,5
+98,Angers,32,3,5,24,25,68,-43,14,Adrien Hunou Sofiane Boufal,4,2

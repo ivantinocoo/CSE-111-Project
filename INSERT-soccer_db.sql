@@ -3,7 +3,7 @@ INSERT INTO nation (n_nationID, n_nationName) VALUES (197, 'Scotland');
 INSERT INTO nation (n_nationID, n_nationName) VALUES (198, 'Wales');
 
 -- Insert data into the 'leagues' table
---INSERT INTO leagues (l_leagueID, l_leagueName, l_nationID) VALUES (1, 'League A', 1);
+--INSERT INTO leagues (l_leagueID, l_leagueName, l_nationID) VALUES (6, 'UEFA CHAMPIONS LEAGUE',);
 
 -- Insert data into the 'teams' table
 --INSERT INTO teams (t_teamID, t_teamName, t_matchesPlayed, t_wins, t_draws, t_losses, t_goalsFor, t_goalsAgainst, t_goalsDifference, t_Points, t_topScorer, t_topScorerGoals) VALUES (1, 'Team A', 5, 3, 1, 1, 12, 5, 7, 10, 'Player A', 5);
