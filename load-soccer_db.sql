@@ -19,3 +19,4 @@ DELETE FROM teams;
 .import 'data/2022-2023_Football_Players.csv' players
 .import 'data/2022-2023_Football_Player_Stats.csv' stats
 .import 'data/coaches.tbl' coaches
+.import 'data/Premier_League.csv' matches

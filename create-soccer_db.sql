@@ -34,10 +34,12 @@ CREATE TABLE players (
 );
 
 CREATE TABLE matches (
-    m_matchID               int not null,
     m_date                  date not null,
-    m_homeID                int not null,
-    m_awayID                int not null
+    m_stadium               varchar(15) not null,
+    m_homeTeamName          varchar(15) not null,
+    m_homeTeamGoals         int not null,
+    m_awayTeamName          varchar(15) not null,
+    m_awayTeamGoals         int not null
 );
 
 CREATE TABLE coaches (
