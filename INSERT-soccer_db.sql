@@ -1,5 +1,6 @@
 -- Insert data into the 'nation' table
-INSERT INTO nation (n_nationID, n_nationName) VALUES (1, 'Nation A');
+INSERT INTO nation (n_nationID, n_nationName) VALUES (197, 'Scotland');
+INSERT INTO nation (n_nationID, n_nationName) VALUES (198, 'Wales');
 
 -- Insert data into the 'leagues' table
 --INSERT INTO leagues (l_leagueID, l_leagueName, l_nationID) VALUES (1, 'League A', 1);
