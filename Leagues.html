@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<main class="main-content">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Central</title>
+</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-        <title>Soccer Central</title>
-    </head>
+<body>
+    <h1>Leagues</h1>
+    <ul id="leagues-list">
+        <!-- Leagues will be displayed here -->
+    </ul>
 
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="HomePage.html">Home</a></li>
-                    <li><a href="Leagues.html">Leagues</a></li>
-                    <li><a href="Teams.html">Teams</a></li>
-                    <li><a href="Players.html">Players</a></li>
-                </ul>
-            </nav>
-        </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', DisplayLeagues);
 
-        <h1>Leagues</h1>
-        <div id="leagues-list">
-            <!-- Leagues will be displayed here -->
-        </div>
-        <script>
-            // Call the function from script.js when the page loads
-            window.onload = function() {
-                fetchLeaguesAndDisplay();
-            };
-        </script>
-    </body>
-</main>
+        function DisplayLeagues() {
+            fetch('/api/leagues')
+                .then(response => response.json())
+                .then(data => {
+                    const leaguesList = document.getElementById('leagues-list');
+                    data.leagues.forEach(league => {
+                        const leagueItem = document.createElement('li');
+                        leagueItem.textContent = `League ID: ${league[0]}, Name: ${league[1]}, Nation: ${league[2]}`;
+                        leaguesList.appendChild(leagueItem);
+                    });
+                })
+                .catch(error => console.error('Error fetching leagues data:', error));
+        };
+    </script>
+</body>
 </html>

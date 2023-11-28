@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Central</title>
+</head>
+
+<body>
+    <h1>Matches</h1>
+    <ul id="matches-list">
+        <!-- Matches will be displayed here -->
+    </ul>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', DisplayMatches);
+
+        function DisplayMatches() {
+            fetch('/api/matches')
+                .then(response => response.json())
+                .then(data => {
+                    const matchesList = document.getElementById('matches-list');
+                    data.matches.forEach(match => {
+                        const matchItem = document.createElement('li');
+                        matchItem.textContent = `Match ID: ${match[0]}, Date: ${match[1]}, Stadium: ${match[2]}, Home Team: ${match[3]} (${match[4]} goals), Away Team: ${match[5]} (${match[6]} goals)`;
+                        matchesList.appendChild(matchItem);
+                    });
+                })
+                .catch(error => console.error('Error fetching matches data:', error));
+        };
+    </script>
+</body>
+
+</html>

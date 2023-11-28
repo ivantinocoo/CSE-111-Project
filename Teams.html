@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<main class="main-content">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Central</title>
+</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Soccer Central</title>
-    </head>
-    
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="HomePage.html">Home</a></li>
-                    <li><a href="Leagues.html">Leagues</a></li>
-                    <li><a href="Teams.html">Teams</a></li>
-                    <li><a href="Players.html">Players</a></li>
-                </ul>
-            </nav>
-        </header>
-    
-        <h1>Teams</h1>
+<body>
+    <h1>Teams</h1>
+    <ul id="teams-list">
+        <!-- Teams will be displayed here -->
+    </ul>
 
-    </body>
-</main>
+    <script>
+        document.addEventListener('DOMContentLoaded', DisplayTeams);
+
+        function DisplayTeams() {
+            fetch('/api/teams')
+                .then(response => response.json())
+                .then(data => {
+                    const teamsList = document.getElementById('teams-list');
+                    data.teams.forEach(team => {
+                        const teamItem = document.createElement('li');
+                        teamItem.textContent = `Team ID: ${team[0]}, Name: ${team[1]}, Matches Played: ${team[2]}, Wins: ${team[3]}, Draws: ${team[4]}, Losses: ${team[5]}, Goals For: ${team[6]}, Goals Against: ${team[7]}, Goal Difference: ${team[8]}, Points: ${team[9]}, Top Scorer: ${team[10]}, Top Scorer Goals: ${team[11]}, League ID: ${team[12]}`;
+                        teamsList.appendChild(teamItem);
+                    });
+                })
+                .catch(error => console.error('Error fetching teams data:', error));
+        };
+    </script>
+</body>
+
 </html>

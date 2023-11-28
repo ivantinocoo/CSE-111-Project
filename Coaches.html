@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Central</title>
+</head>
+
+<body>
+    <h1>Coaches</h1>
+    <ul id="coaches-list">
+        <!-- Coaches will be displayed here -->
+    </ul>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', DisplayCoaches);
+
+        function DisplayCoaches() {
+            fetch('/api/coaches')
+                .then(response => response.json())
+                .then(data => {
+                    const coachesList = document.getElementById('coaches-list');
+                    data.coaches.forEach(coach => {
+                        const coachItem = document.createElement('li');
+                        coachItem.textContent = `Coach ID: ${coach[0]}, Name: ${coach[1]}, Age: ${coach[2]}, Contract Expires: ${coach[3]}, Nation ID: ${coach[4]}, Team ID: ${coach[5]}`;
+                        coachesList.appendChild(coachItem);
+                    });
+                })
+                .catch(error => console.error('Error fetching coaches data:', error));
+        };
+    </script>
+</body>
+</html>
