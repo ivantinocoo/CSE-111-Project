@@ -5,6 +5,11 @@ import sqlite3
 app = Flask(__name__)
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
+html_directory = os.path.join(current_directory, 'HTML')
+
+@app.route('/HomePage.html')
+def Home():
+    return send_from_directory(html_directory, 'HomePage.html')
 
 @app.route('/Leagues.html')
 def Leagues():
@@ -25,6 +30,14 @@ def Coaches():
 @app.route('/Matches.html')
 def Matches():
     return send_from_directory(current_directory, 'html/Matches.html')
+
+@app.route('/style.css')
+def style():
+    return send_from_directory(current_directory, 'style.css')
+
+@app.route('/Soccer.jpeg')
+def image():
+    return send_from_directory(current_directory, 'Soccer.jpeg')
 
 DATABASE = 'soccer_db.sqlite'
 
