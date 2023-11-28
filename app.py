@@ -8,23 +8,23 @@ current_directory = os.path.dirname(os.path.abspath(__file__))
 
 @app.route('/Leagues.html')
 def Leagues():
-    return send_from_directory(current_directory, 'Leagues.html')
+    return send_from_directory(current_directory, 'html/Leagues.html')
 
 @app.route('/Teams.html')
 def Teams():
-    return send_from_directory(current_directory, 'Teams.html')
+    return send_from_directory(current_directory, 'html/Teams.html')
 
 @app.route('/Players.html')
 def Players():
-    return send_from_directory(current_directory, 'Players.html')
+    return send_from_directory(current_directory, 'html/Players.html')
 
 @app.route('/Coaches.html')
 def Coaches():
-    return send_from_directory(current_directory, 'Coaches.html')
+    return send_from_directory(current_directory, 'html/Coaches.html')
 
 @app.route('/Matches.html')
 def Matches():
-    return send_from_directory(current_directory, 'Matches.html')
+    return send_from_directory(current_directory, 'html/Matches.html')
 
 DATABASE = 'soccer_db.sqlite'
 
