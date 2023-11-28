@@ -7,6 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
         <title>Soccer Central</title>
     </head>
 
@@ -23,8 +24,15 @@
         </header>
 
         <h1>Leagues</h1>
-
-
+        <div id="leagues-list">
+            <!-- Leagues will be displayed here -->
+        </div>
+        <script>
+            // Call the function from script.js when the page loads
+            window.onload = function() {
+                fetchLeaguesAndDisplay();
+            };
+        </script>
     </body>
 </main>
 </html>

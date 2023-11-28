@@ -1,45 +1,44 @@
+from flask import Flask, jsonify
 import sqlite3
-from sqlite3 import Error
 
+app = Flask(__name__)
+DATABASE = 'soccer_db.sqlite'
 
-def openConnection(_dbFile):
-    print("++++++++++++++++++++++++++++++++++")
-    print("Open database: ", _dbFile)
-
-    conn = None
-    try:
-        conn = sqlite3.connect(_dbFile)
-        print("success")
-    except Error as e:
-        print(e)
-
-    print("++++++++++++++++++++++++++++++++++")
-
+# Open connection function remains the same
+def open_connection():
+    conn = sqlite3.connect(DATABASE)
     return conn
 
-def closeConnection(_conn, _dbFile):
-    print("++++++++++++++++++++++++++++++++++")
-    print("Close database: ", _dbFile)
+# Close connection function remains the same
+def close_connection(conn):
+    conn.close()
 
-    try:
-        _conn.close()
-        print("success")
-    except Error as e:
-        print(e)
+@app.route('/api/leagues', methods=['GET'])
+def get_leagues():
+    conn = open_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM leagues")
+    leagues = cursor.fetchall()
+    close_connection(conn)
+    return jsonify({'leagues': leagues})
 
-    print("++++++++++++++++++++++++++++++++++")
+@app.route('/api/teams', methods=['GET'])
+def get_teams():
+    conn = open_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM teams")
+    teams = cursor.fetchall()
+    close_connection(conn)
+    return jsonify({'teams': teams})
 
-
-def main():
-    database = r"soccer_db.sqlite"
-
-    # create a database connection
-    conn = openConnection(database)
-    
-
-
-    closeConnection(conn, database)
-
+@app.route('/api/players', methods=['GET'])
+def get_players():
+    conn = open_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM players")
+    players = cursor.fetchall()
+    close_connection(conn)
+    return jsonify({'players': players})
 
 if __name__ == '__main__':
-    main()
+    app.run(debug=True)
