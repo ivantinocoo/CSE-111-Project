@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Soccer Central</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="Leagues.html">Leagues</a></li>
+        <li><a href="Teams.html">Teams</a></li>
+        <li><a href="Coaches.html">Coaches</a></li>
+        <li><a href="Players.html">Players</a></li>
+        <li><a href="Matches.html">Matches</a></li>
+        <li><a class="active" href="Stats.html">Stats</a></li>
+    </ul>
+
+    <h1>Player Stats</h1>
+    <table id="stats-table">
+        <thead>
+            <tr>
+                <th>Player ID</th>
+                <th>Matches Played</th>
+                <th>Starts</th>
+                <th>Minutes</th>
+                <th>Goals</th>
+                <th>Shots</th>
+                <th>Pass Completed</th>
+                <th>Pass Attempted</th>
+                <th>Assists</th>
+                <th>Interceptions</th>
+                <th>Clearences</th>
+                <th>Touches</th>
+                <th>Yellow Cards</th>
+                <th>Red Cards</th>
+                <!-- Add more columns as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Stats will be displayed here -->
+        </tbody>
+    </table>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', DisplayStats);
+
+        function DisplayStats() {
+            fetch('/api/stats')
+                .then(response => response.json())
+                .then(data => {
+                    const statsTable = document.getElementById('stats-table').getElementsByTagName('tbody')[0];
+                    data.stats.forEach(stat => {
+                        const row = statsTable.insertRow();
+                        for (let i = 0; i < stat.length; i++) {
+                            const cell = row.insertCell(i);
+                            cell.textContent = stat[i];
+                        }
+                    });
+                })
+                .catch(error => console.error('Error fetching stats data:', error));
+        };
+    </script>
+</body>
+
+</html>

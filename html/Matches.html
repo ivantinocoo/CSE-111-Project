@@ -16,12 +16,27 @@
         <li><a href="Coaches.html">Coaches</a></li>
         <li><a href="Players.html">Players</a></li>
         <li><a class="active" href="Matches.html">Matches</a></li>
+        <li><a href="Stats.html">Stats</a></li>
     </ul>
 
     <h1>Matches</h1>
-    <ul id="matches-list">
-        <!-- Matches will be displayed here -->
-    </ul>
+    <table id="matches-table">
+        <thead>
+            <tr>
+                <th>Match ID</th>
+                <th>Date</th>
+                <th>Stadium</th>
+                <th>Home Team</th>
+                <th>Home Goals</th>
+                <th>Away Team</th>
+                <th>Away Goals</th>
+                <!-- Add more columns as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Matches will be displayed here -->
+        </tbody>
+    </table>
 
     <script>
         document.addEventListener('DOMContentLoaded', DisplayMatches);
@@ -30,11 +45,13 @@
             fetch('/api/matches')
                 .then(response => response.json())
                 .then(data => {
-                    const matchesList = document.getElementById('matches-list');
+                    const matchesTable = document.getElementById('matches-table').getElementsByTagName('tbody')[0];
                     data.matches.forEach(match => {
-                        const matchItem = document.createElement('li');
-                        matchItem.textContent = `Match ID: ${match[0]}, Date: ${match[1]}, Stadium: ${match[2]}, Home Team: ${match[3]} (${match[4]} goals), Away Team: ${match[5]} (${match[6]} goals)`;
-                        matchesList.appendChild(matchItem);
+                        const row = matchesTable.insertRow();
+                        for (let i = 0; i < match.length; i++) {
+                            const cell = row.insertCell(i);
+                            cell.textContent = match[i];
+                        }
                     });
                 })
                 .catch(error => console.error('Error fetching matches data:', error));

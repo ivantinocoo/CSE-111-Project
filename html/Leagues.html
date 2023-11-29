@@ -16,12 +16,23 @@
         <li><a href="Coaches.html">Coaches</a></li>
         <li><a href="Players.html">Players</a></li>
         <li><a href="Matches.html">Matches</a></li>
+        <li><a href="Stats.html">Stats</a></li>
     </ul>
 
     <h1>Leagues</h1>
-    <ul id="leagues-list">
-        <!-- Leagues will be displayed here -->
-    </ul>
+    <table id="leagues-table">
+        <thead>
+            <tr>
+                <th>League ID</th>
+                <th>Name</th>
+                <th>Nation</th>
+                <!-- Add more columns as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Leagues will be displayed here -->
+        </tbody>
+    </table>
 
     <script>
         document.addEventListener('DOMContentLoaded', DisplayLeagues);
@@ -30,11 +41,13 @@
             fetch('/api/leagues')
                 .then(response => response.json())
                 .then(data => {
-                    const leaguesList = document.getElementById('leagues-list');
+                    const leaguesTable = document.getElementById('leagues-table').getElementsByTagName('tbody')[0];
                     data.leagues.forEach(league => {
-                        const leagueItem = document.createElement('li');
-                        leagueItem.textContent = `League ID: ${league[0]}, Name: ${league[1]}, Nation: ${league[2]}`;
-                        leaguesList.appendChild(leagueItem);
+                        const row = leaguesTable.insertRow();
+                        for (let i = 0; i < league.length; i++) {
+                            const cell = row.insertCell(i);
+                            cell.textContent = league[i];
+                        }
                     });
                 })
                 .catch(error => console.error('Error fetching leagues data:', error));

@@ -31,6 +31,10 @@ def Coaches():
 def Matches():
     return send_from_directory(current_directory, 'html/Matches.html')
 
+@app.route('/Stats.html')
+def Stats():
+    return send_from_directory(current_directory, 'html/Stats.html')
+
 @app.route('/style.css')
 def style():
     return send_from_directory(current_directory, 'style.css')
@@ -92,6 +96,15 @@ def get_matches():
     matches = cursor.fetchall()
     close_connection(conn)
     return jsonify({'matches': matches})
+
+@app.route('/api/stats', methods=['GET'])
+def get_stats():
+    conn = open_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM stats")
+    stats = cursor.fetchall()
+    close_connection(conn)
+    return jsonify({'stats': stats})
 
 if __name__ == '__main__':
     app.run(debug=True)
