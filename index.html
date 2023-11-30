@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter and Table</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Soccer Stats</h1>
+    </header>
+
+    <main>
+        <section class="filter-section">
+            <!-- Filters -->
+            <h2>Filters</h2>
+            <!-- Filter options -->
+            <div class="filter-options">
+                <div class="filter-item">
+                    <label for="league-filter">Select League:</label>
+                    <select id="league-filter">
+                        <option value="">All Leagues</option>
+                        <!-- Options will be dynamically populated using JavaScript -->
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="team-filter">Select Team:</label>
+                    <select id="team-filter">
+                        <option value="team1">Team 1</option>
+                        <option value="team2">Team 2</option>
+                        <!-- Add more team options -->
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="player-name">Search Player:</label>
+                    <input type="text" id="player-name" placeholder="Enter player name">
+                </div>
+                <div class="filter-item">
+                    <label for="coach-filter">Select Coach:</label>
+                    <select id="coach-filter">
+                        <option value="coach1">Coach 1</option>
+                        <option value="coach2">Coach 2</option>
+                        <!-- Add more coach options -->
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="nation-filter">Select Nation:</label>
+                    <select id="nation-filter">
+                        <option value="nation1">Nation 1</option>
+                        <option value="nation2">Nation 2</option>
+                        <!-- Add more nation options -->
+                    </select>
+                </div>
+            </div>
+            <button onclick="applyFilters()">Apply Filters</button>
+        </section>
+
+        <section class="table-section">
+            <!-- Table to display filtered data -->
+            <h2>Filtered Data</h2>
+            <table id="data-table">
+                <thead>
+                    <!-- Table headers -->
+                    <tr>
+                        <th>Player ID</th>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Age</th>
+                        <th>Born</th>
+                        <th>Team</th>
+                        <!-- Add more columns as needed -->
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Table rows will be dynamically populated here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
