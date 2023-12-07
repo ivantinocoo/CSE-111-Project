@@ -263,11 +263,11 @@ def display_player_info(conn):
         print("1. Show all players")
         print("2. Players that play in a specific league")
         print("3. Players that have received the most red cards")
-        print("4. Youngest player with the most goals")
+        print("4. Player with the most goals")
         print("5. Average age of players")
         print("6. Players that have played the most games")
         print("7. Players with the most assists")
-        print("8. Player with the most touches")
+        print("8. Players with the most touches")
         print("9. Players with the best goal average")
         print("10. Go back to main menu")
         
@@ -321,7 +321,7 @@ def display_player_info(conn):
                     FROM players p
                     JOIN stats s ON p.p_playerID = s.s_playerID
                     ORDER BY s.s_redCards DESC
-                    LIMIT 1
+                    LIMIT 5
                 """)
                 
                 row = cursor.fetchone()
@@ -339,11 +339,10 @@ def display_player_info(conn):
             try:
                 cursor = conn.cursor()
                 cursor.execute("""
-                    SELECT p.p_playerName, p.p_age, s.s_goals
+                    SELECT p.p_playerName, MAX(s.s_goals)
                     FROM players p
                     JOIN stats s ON p.p_playerID = s.s_playerID
-                    ORDER BY s.s_goals DESC, p.p_age ASC
-                    LIMIT 1
+                    LIMIT 5
                 """)
                 
                 row = cursor.fetchone()
@@ -351,8 +350,7 @@ def display_player_info(conn):
                 if row:
                     print("\nPlayer with the most goals:")
                     print(f"Player Name: {row[0]}")
-                    print(f"Age: {row[1]}")
-                    print(f"Goals: {row[2]}")
+                    print(f"Goals: {row[1]}")
                 else:
                     print("\nNo players found.")
             except Error as e:
@@ -385,7 +383,7 @@ def display_player_info(conn):
                     JOIN stats s ON p.p_playerID = s.s_playerID
                     GROUP BY p.p_playerName
                     ORDER BY total_matches_played DESC
-                    LIMIT 1
+                    LIMIT 5
                 """)
                 
                 row = cursor.fetchone()
@@ -408,7 +406,7 @@ def display_player_info(conn):
                     JOIN stats s ON p.p_playerID = s.s_playerID
                     GROUP BY p.p_playerName
                     ORDER BY total_assists DESC
-                    LIMIT 1
+                    LIMIT 5
                 """)
                 
                 row = cursor.fetchone()
@@ -432,7 +430,7 @@ def display_player_info(conn):
                     JOIN stats s ON p.p_playerID = s.s_playerID
                     GROUP BY p.p_playerName
                     ORDER BY total_touches DESC
-                    LIMIT 1
+                    LIMIT 5
                 """)
                 
                 row = cursor.fetchone()
@@ -455,7 +453,7 @@ def display_player_info(conn):
                     JOIN stats s ON p.p_playerID = s.s_playerID
                     GROUP BY p.p_playerName
                     ORDER BY goal_average DESC
-                    LIMIT 1
+                    LIMIT 5
                 """)
                 
                 row = cursor.fetchone()
